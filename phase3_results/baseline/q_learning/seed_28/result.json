@@ -1,0 +1,2037 @@
+{
+  "backend": "q_learning",
+  "seed": 28,
+  "episodes": 100,
+  "steps_per_episode": 250,
+  "training_mean_reward": 2.52,
+  "training_success_rate": 1,
+  "training_rewards": [
+    -10.0,
+    -26.0,
+    -11.0,
+    -7.0,
+    3.0,
+    -7.0,
+    3.0,
+    -1.0,
+    3.0,
+    3.0,
+    4.0,
+    4.0,
+    4.0,
+    3.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    3.0,
+    1.0,
+    2.0,
+    4.0,
+    4.0,
+    4.0,
+    3.0,
+    4.0,
+    -1.0,
+    3.0,
+    4.0,
+    4.0,
+    2.0,
+    4.0,
+    4.0,
+    3.0,
+    4.0,
+    4.0,
+    4.0,
+    1.0,
+    4.0,
+    4.0,
+    2.0,
+    2.0,
+    3.0,
+    4.0,
+    3.0,
+    3.0,
+    4.0,
+    2.0,
+    2.0,
+    3.0,
+    4.0,
+    2.0,
+    3.0,
+    4.0,
+    0.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    3.0,
+    3.0,
+    3.0,
+    4.0,
+    3.0,
+    3.0,
+    4.0,
+    4.0,
+    3.0,
+    4.0,
+    3.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    3.0,
+    4.0,
+    4.0,
+    2.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    3.0,
+    2.0,
+    4.0,
+    4.0,
+    1.0,
+    2.0,
+    3.0
+  ],
+  "training_successes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "training_by_episode": [
+    {
+      "episode": 1,
+      "reward": -10.0,
+      "success": 1,
+      "steps": 21
+    },
+    {
+      "episode": 2,
+      "reward": -26.0,
+      "success": 1,
+      "steps": 37
+    },
+    {
+      "episode": 3,
+      "reward": -11.0,
+      "success": 1,
+      "steps": 22
+    },
+    {
+      "episode": 4,
+      "reward": -7.0,
+      "success": 1,
+      "steps": 18
+    },
+    {
+      "episode": 5,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 6,
+      "reward": -7.0,
+      "success": 1,
+      "steps": 18
+    },
+    {
+      "episode": 7,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 8,
+      "reward": -1.0,
+      "success": 1,
+      "steps": 12
+    },
+    {
+      "episode": 9,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 10,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 11,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 12,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 13,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 14,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 15,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 16,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 17,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 18,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 19,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 20,
+      "reward": 1.0,
+      "success": 1,
+      "steps": 10
+    },
+    {
+      "episode": 21,
+      "reward": 2.0,
+      "success": 1,
+      "steps": 9
+    },
+    {
+      "episode": 22,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 23,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 24,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 25,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 26,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 27,
+      "reward": -1.0,
+      "success": 1,
+      "steps": 12
+    },
+    {
+      "episode": 28,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 29,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 30,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 31,
+      "reward": 2.0,
+      "success": 1,
+      "steps": 9
+    },
+    {
+      "episode": 32,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 33,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 34,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 35,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 36,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 37,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 38,
+      "reward": 1.0,
+      "success": 1,
+      "steps": 10
+    },
+    {
+      "episode": 39,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 40,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 41,
+      "reward": 2.0,
+      "success": 1,
+      "steps": 9
+    },
+    {
+      "episode": 42,
+      "reward": 2.0,
+      "success": 1,
+      "steps": 9
+    },
+    {
+      "episode": 43,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 44,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 45,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 46,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 47,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 48,
+      "reward": 2.0,
+      "success": 1,
+      "steps": 9
+    },
+    {
+      "episode": 49,
+      "reward": 2.0,
+      "success": 1,
+      "steps": 9
+    },
+    {
+      "episode": 50,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 51,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 52,
+      "reward": 2.0,
+      "success": 1,
+      "steps": 9
+    },
+    {
+      "episode": 53,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 54,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 55,
+      "reward": 0.0,
+      "success": 1,
+      "steps": 11
+    },
+    {
+      "episode": 56,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 57,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 58,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 59,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 60,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 61,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 62,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 63,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 64,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 65,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 66,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 67,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 68,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 69,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 70,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 71,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 72,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 73,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 74,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 75,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 76,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 77,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 78,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 79,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 80,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 81,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 82,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 83,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 84,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 85,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 86,
+      "reward": 2.0,
+      "success": 1,
+      "steps": 9
+    },
+    {
+      "episode": 87,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 88,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 89,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 90,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 91,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 92,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 93,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 94,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    },
+    {
+      "episode": 95,
+      "reward": 2.0,
+      "success": 1,
+      "steps": 9
+    },
+    {
+      "episode": 96,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 97,
+      "reward": 4.0,
+      "success": 1,
+      "steps": 7
+    },
+    {
+      "episode": 98,
+      "reward": 1.0,
+      "success": 1,
+      "steps": 10
+    },
+    {
+      "episode": 99,
+      "reward": 2.0,
+      "success": 1,
+      "steps": 9
+    },
+    {
+      "episode": 100,
+      "reward": 3.0,
+      "success": 1,
+      "steps": 8
+    }
+  ],
+  "evaluation_by_episode": [
+    {
+      "evaluation_mean_reward": -250.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 0,
+      "evaluation_mean_steps": 250,
+      "evaluation_rewards": [
+        -250.0
+      ],
+      "evaluation_successes": [
+        0
+      ]
+    },
+    {
+      "evaluation_mean_reward": -250.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 0,
+      "evaluation_mean_steps": 250,
+      "evaluation_rewards": [
+        -250.0
+      ],
+      "evaluation_successes": [
+        0
+      ]
+    },
+    {
+      "evaluation_mean_reward": -250.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 0,
+      "evaluation_mean_steps": 250,
+      "evaluation_rewards": [
+        -250.0
+      ],
+      "evaluation_successes": [
+        0
+      ]
+    },
+    {
+      "evaluation_mean_reward": -250.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 0,
+      "evaluation_mean_steps": 250,
+      "evaluation_rewards": [
+        -250.0
+      ],
+      "evaluation_successes": [
+        0
+      ]
+    },
+    {
+      "evaluation_mean_reward": -250.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 0,
+      "evaluation_mean_steps": 250,
+      "evaluation_rewards": [
+        -250.0
+      ],
+      "evaluation_successes": [
+        0
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": -250.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 0,
+      "evaluation_mean_steps": 250,
+      "evaluation_rewards": [
+        -250.0
+      ],
+      "evaluation_successes": [
+        0
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    },
+    {
+      "evaluation_mean_reward": 4.0,
+      "evaluation_reward_spread": 0.0,
+      "evaluation_success_rate": 1,
+      "evaluation_mean_steps": 7,
+      "evaluation_rewards": [
+        4.0
+      ],
+      "evaluation_successes": [
+        1
+      ]
+    }
+  ],
+  "episodes_to_optimal_policy": 6,
+  "final_evaluation": {
+    "evaluation_mean_reward": 4.0,
+    "evaluation_reward_spread": 0.0,
+    "evaluation_success_rate": 1,
+    "evaluation_mean_steps": 7,
+    "evaluation_rewards": [
+      4.0
+    ],
+    "evaluation_successes": [
+      1
+    ]
+  },
+  "evaluation_mean_reward": 4.0,
+  "evaluation_reward_spread": 0.0,
+  "evaluation_success_rate": 1,
+  "evaluation_mean_steps": 7,
+  "runtime_seconds": 3.487866153009236,
+  "experiment": "baseline",
+  "training_game": "aaa_small",
+  "evaluation_game": "aaa_small"
+}

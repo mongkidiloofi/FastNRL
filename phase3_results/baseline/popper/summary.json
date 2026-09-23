@@ -1,0 +1,43 @@
+{
+  "runs": 30,
+  "metrics": {
+    "evaluation_success_rate": {
+      "mean": 1.0,
+      "spread": 0.0,
+      "n": 30
+    },
+    "evaluation_mean_reward": {
+      "mean": 4.0,
+      "spread": 0.0,
+      "n": 30
+    },
+    "evaluation_mean_steps": {
+      "mean": 7.0,
+      "spread": 0.0,
+      "n": 30
+    },
+    "induction_seconds": {
+      "mean": 6.233127681748011,
+      "spread": 1.3221639697685048,
+      "n": 30
+    },
+    "planner_plan_steps": {
+      "mean": 7.0,
+      "spread": 0.0,
+      "n": 30
+    },
+    "induction_calls": {
+      "mean": 4.6,
+      "spread": 0.7118052168020874,
+      "n": 30
+    },
+    "episodes_to_convergence": {
+      "mean": 1.2666666666666666,
+      "spread": 0.5120763831912405,
+      "n": 30
+    }
+  },
+  "backend": "popper",
+  "experiment": "baseline",
+  "seed_start": 0
+}

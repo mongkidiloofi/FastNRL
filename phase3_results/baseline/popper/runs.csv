@@ -1,0 +1,481 @@
+backend,collection_episodes,collection_success_rate,collection_transitions,contextual_hypothesis,episodes,episodes_to_convergence,evaluation_game,evaluation_mean_reward,evaluation_mean_steps,evaluation_reward_spread,evaluation_success_rate,experiment,hypothesis_rules,hypothesis_size_chars,induction_calls,induction_seconds,planner_hypothesis,planner_plan_steps,protocol_note,runtime_seconds,seed,steps_per_episode,training_game
+popper,100,0.96,10202,"transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,9.294885919080116,"state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",58.77316284697736,0,250,aaa_small
+popper,100,0.92,10544,"transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).",100,2,aaa_small,4.0,7,0.0,1,baseline,8,509,5,4.420337649935391,"state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",53.089894260047004,1,250,aaa_small
+popper,100,0.96,10303,"transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,5.5056973220198415,"state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",51.05456362501718,2,250,aaa_small
+popper,100,0.92,10747,"transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,4.4560125630232506,"state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",52.19938301097136,3,250,aaa_small
+popper,100,0.91,11455,"transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,6.5631101410253905,"state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",59.15481780900154,4,250,aaa_small
+popper,100,0.88,11235,"transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,5.812587394088041,"state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",52.17281116702361,5,250,aaa_small
+popper,100,0.93,10056,"transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,6.259559712023474,"state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",53.921228318009526,6,250,aaa_small
+popper,100,0.93,10912,"transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,6.39877620403422,"state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",54.572728450002614,7,250,aaa_small
+popper,100,0.91,9721,"transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).",100,2,aaa_small,4.0,7,0.0,1,baseline,8,509,5,5.19643874198664,"state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",48.74285611201776,8,250,aaa_small
+popper,100,0.9,10111,"transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,4,4.530896183976438,"state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",50.72749382996699,9,250,aaa_small
+popper,100,0.9,9997,"transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,5.738951960054692,"state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",57.58501945598982,10,250,aaa_small
+popper,100,0.95,9998,"transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).",100,2,aaa_small,4.0,7,0.0,1,baseline,8,509,4,4.9615199460531585,"state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",54.420221908949316,11,250,aaa_small
+popper,100,0.89,11984,"transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,4,5.466268757998478,"state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",64.06509114900837,12,250,aaa_small
+popper,100,0.93,9578,"transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,6.343161341035739,"state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",54.7746616830118,13,250,aaa_small
+popper,100,0.9,11507,"transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,6.84831672598375,"state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",61.502269457967486,14,250,aaa_small
+popper,100,0.99,9402,"transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).",100,3,aaa_small,4.0,7,0.0,1,baseline,8,509,5,6.666065520956181,"state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",53.57791048497893,15,250,aaa_small
+popper,100,0.91,9989,"transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).",100,2,aaa_small,4.0,7,0.0,1,baseline,8,509,4,6.482110298995394,"state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",53.98953049496049,16,250,aaa_small
+popper,100,0.94,10352,"transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,4,6.3220931340474635,"state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",55.54843489697669,17,250,aaa_small
+popper,100,0.91,10518,"transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,6.620692013995722,"state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",65.515602399013,18,250,aaa_small
+popper,100,0.94,10041,"transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,7.0516203859006055,"state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",57.13417928898707,19,250,aaa_small
+popper,100,0.92,10267,"transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,5.389511463989038,"state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",62.189979229995515,20,250,aaa_small
+popper,100,0.93,10233,"transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).",100,2,aaa_small,4.0,7,0.0,1,baseline,8,509,5,6.279738349083345,"state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",61.39839775196742,21,250,aaa_small
+popper,100,0.91,10660,"transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,6.910144620982464,"state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",71.58648254699074,22,250,aaa_small
+popper,100,0.92,10493,"transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,4,5.22981134604197,"state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",65.67744346999098,23,250,aaa_small
+popper,100,0.92,10399,"transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,10.22283750702627,"state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",65.49903490499128,24,250,aaa_small
+popper,100,0.91,9970,"transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,7.384983352967538,"state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",62.61548080999637,25,250,aaa_small
+popper,100,0.87,12039,"transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).",100,2,aaa_small,4.0,7,0.0,1,baseline,8,509,2,4.9085019920021296,"state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",65.09579925297294,26,250,aaa_small
+popper,100,0.92,9478,"transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,4,7.273128892062232,"state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",58.37687786796596,27,250,aaa_small
+popper,100,0.92,11435,"transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,3,4.549873766954988,"state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",56.974914090998936,28,250,aaa_small
+popper,100,0.89,10270,"transition(A,B):- state_before(A,C),step_up(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_up(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_left(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_down(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,B),step_right(A,C,B),wall(A,C).
+transition(A,B):- state_before(A,C),step_right(A,B,C),open(A,B).
+transition(A,B):- state_before(A,C),step_down(A,B,C),open(A,B).
+transition(A,B):- state_before(A,B),step_left(A,C,B),wall(A,C).",100,1,aaa_small,4.0,7,0.0,1,baseline,8,509,5,7.906197245116346,"state_at(B,T+1):-time(T),adjacent(up,B,C),state_at(C,T),action(up,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(up,C,B),state_at(B,T),action(up,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(left,B,C),state_at(C,T),action(left,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,C,B),state_at(B,T),action(down,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,C,B),state_at(B,T),action(right,T),wall(C).
+state_at(B,T+1):-time(T),adjacent(right,B,C),state_at(C,T),action(right,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(down,B,C),state_at(C,T),action(down,T),not wall(B).
+state_at(B,T+1):-time(T),adjacent(left,C,B),state_at(B,T),action(left,T),wall(C).
+",7,"Popper collects transitions incrementally and re-induces only when the current hypothesis fails the observed CDPI coverage check; this remains a Popper replacement, not a claim of exact ILASP call-for-call equivalence.",55.56087462702999,29,250,aaa_small

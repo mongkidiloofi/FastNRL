@@ -1,0 +1,28 @@
+{
+  "runs": 30,
+  "metrics": {
+    "evaluation_success_rate": {
+      "mean": 1.0,
+      "spread": 0.0,
+      "n": 30
+    },
+    "evaluation_mean_reward": {
+      "mean": 4.0,
+      "spread": 0.0,
+      "n": 30
+    },
+    "evaluation_mean_steps": {
+      "mean": 7.0,
+      "spread": 0.0,
+      "n": 30
+    },
+    "episodes_to_optimal_policy": {
+      "mean": 6.933333333333334,
+      "spread": 1.1234866364235145,
+      "n": 30
+    }
+  },
+  "backend": "q_learning",
+  "experiment": "baseline",
+  "seed_start": 0
+}

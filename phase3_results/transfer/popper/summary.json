@@ -1,0 +1,33 @@
+{
+  "runs": 5,
+  "metrics": {
+    "evaluation_success_rate": {
+      "mean": 1.0,
+      "spread": 0.0,
+      "n": 5
+    },
+    "evaluation_mean_reward": {
+      "mean": -10.0,
+      "spread": 0.0,
+      "n": 5
+    },
+    "evaluation_mean_steps": {
+      "mean": 21.0,
+      "spread": 0.0,
+      "n": 5
+    },
+    "induction_seconds": {
+      "mean": 3.948770716798026,
+      "spread": 1.5103758500409183,
+      "n": 5
+    },
+    "planner_plan_steps": {
+      "mean": 21.0,
+      "spread": 0.0,
+      "n": 5
+    }
+  },
+  "backend": "popper",
+  "experiment": "transfer",
+  "seed_start": 0
+}
